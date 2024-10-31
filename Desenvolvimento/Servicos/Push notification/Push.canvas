@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"79fa2bbaa40c5cc4","type":"text","text":"## Monitchat","x":-600,"y":-340,"width":250,"height":60,"color":"4"},
+		{"id":"3e51e57157801fb9","type":"text","text":"## Cliente","x":-600,"y":260,"width":250,"height":60},
+		{"id":"32f1aa9c4af76dd3","type":"text","text":"## Service Worker","x":-600,"y":100,"width":250,"height":60},
+		{"id":"46dd9dc0440aa0f8","type":"text","text":"# ntfy.sh","x":-600,"y":-60,"width":250,"height":60,"color":"4"},
+		{"id":"2a18317d867ca336","type":"file","file":"Desenvolvimento/Servicos/Push notification/Push notification.md","x":-280,"y":-340,"width":400,"height":360},
+		{"id":"73fc79a1496e1f7c","type":"text","text":"## WebHook","x":-600,"y":-190,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"e51aa9db69618216","fromNode":"32f1aa9c4af76dd3","fromSide":"bottom","toNode":"3e51e57157801fb9","toSide":"top"},
+		{"id":"7126bbded62c267e","fromNode":"79fa2bbaa40c5cc4","fromSide":"bottom","toNode":"73fc79a1496e1f7c","toSide":"top"},
+		{"id":"a4300ef0ff9cbbd7","fromNode":"73fc79a1496e1f7c","fromSide":"bottom","toNode":"46dd9dc0440aa0f8","toSide":"top"},
+		{"id":"c1af0c7006cbcdac","fromNode":"46dd9dc0440aa0f8","fromSide":"bottom","toNode":"32f1aa9c4af76dd3","toSide":"top"}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"b14ab462dffaf421","x":-360,"y":-360,"width":250,"height":60,"color":"4","type":"text","text":"## Funcionalidades"},
+		{"id":"aa3a53f4b4edaefd","x":-360,"y":-160,"width":320,"height":200,"color":"#98f0a7","type":"text","text":"**Métodos**\n\n - [ ] Listar Box\n- [ ] Listar 10 emails\n- [ ] Lista Email \n- [ ] Enviar Email\n"}
+	],
+	"edges":[
+		{"id":"51b5a4ea1e76a4e4","fromNode":"b14ab462dffaf421","fromSide":"bottom","toNode":"aa3a53f4b4edaefd","toSide":"top"}
+	]
+}

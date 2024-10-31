@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"8511ff332d4f8a50","type":"file","file":"Trabalho/Compleet/Integração/Integração Escopo.md","x":40,"y":-360,"width":400,"height":400},
+		{"id":"eacb78bac8eb88d9","type":"text","text":"[DiagraFlow](https://dialogflow.cloud.google.com/) Google ","x":-560,"y":-360,"width":250,"height":60},
+		{"id":"7522ad048bec4c0e","type":"text","text":"Bloco","x":-560,"y":-190,"width":250,"height":60},
+		{"id":"8fd10ff73df253b1","type":"text","text":"[[Monichat Api]]","x":-560,"y":-20,"width":250,"height":60},
+		{"id":"807d3f6e06df2907","type":"text","text":"Envio de Mensagem ","x":-560,"y":160,"width":250,"height":60},
+		{"id":"ea48fd9677efee2c","type":"text","text":"Agendar","x":-310,"y":803,"width":250,"height":50,"color":"4"},
+		{"id":"f5df04350474c92b","type":"text","text":"BOT\n\n**Ident**\n\n> Recebe \n\nSo um minuto !\n\ncall api\n\nEspera Um Horario para agendar","x":90,"y":675,"width":250,"height":305,"color":"6"},
+		{"id":"902c4646715b698b","type":"text","text":"Check\n\nSendMessage","x":510,"y":715,"width":250,"height":225,"color":"2"},
+		{"id":"b2232d1b0afcba58","type":"text","text":"Espera um Horário","x":90,"y":1080,"width":250,"height":60,"color":"6"},
+		{"id":"47860a6ddefbc916","type":"text","text":"Horario","x":-310,"y":1085,"width":250,"height":50,"color":"4"},
+		{"id":"9bd6c2d7c9e75f36","type":"text","text":"Espera Uma Confirmação","x":90,"y":1280,"width":250,"height":60,"color":"6"},
+		{"id":"8573cc8ce8eaa983","x":-310,"y":1280,"width":250,"height":60,"color":"4","type":"text","text":"Comfirmação"},
+		{"id":"6a606db18b37d9be","x":510,"y":1280,"width":250,"height":62,"color":"2","type":"text","text":"Put Calendar API"},
+		{"id":"98b34c2623038a11","type":"text","text":"Horarios","x":90,"y":480,"width":250,"height":60,"color":"4"},
+		{"id":"735992405bc0776f","x":90,"y":1660,"width":250,"height":60,"color":"6","type":"text","text":"Espera Encerramento de chamada"},
+		{"id":"5474663de5d13405","x":90,"y":1500,"width":250,"height":60,"color":"4","type":"text","text":"Send Message OK"}
+	],
+	"edges":[
+		{"id":"0267554ce75fec4c","fromNode":"eacb78bac8eb88d9","fromSide":"right","toNode":"8511ff332d4f8a50","toSide":"left","label":"Mensagem Provider"},
+		{"id":"d16518fe2cbd71ce","fromNode":"8fd10ff73df253b1","fromSide":"bottom","toNode":"807d3f6e06df2907","toSide":"top"},
+		{"id":"d26dcd87b1a12107","fromNode":"eacb78bac8eb88d9","fromSide":"bottom","toNode":"7522ad048bec4c0e","toSide":"top"},
+		{"id":"2051defd30954f3a","fromNode":"7522ad048bec4c0e","fromSide":"bottom","toNode":"8fd10ff73df253b1","toSide":"top"},
+		{"id":"7589cb5e713062cd","fromNode":"ea48fd9677efee2c","fromSide":"right","toNode":"f5df04350474c92b","toSide":"left"},
+		{"id":"c542fead8b9c8264","fromNode":"f5df04350474c92b","fromSide":"right","toNode":"902c4646715b698b","toSide":"left"},
+		{"id":"2786cc7f3cd97e52","fromNode":"98b34c2623038a11","fromSide":"right","toNode":"902c4646715b698b","toSide":"top"},
+		{"id":"c3d40a18a3a068ee","fromNode":"98b34c2623038a11","fromSide":"left","toNode":"ea48fd9677efee2c","toSide":"top"},
+		{"id":"e1db4d84a761e821","fromNode":"f5df04350474c92b","fromSide":"bottom","toNode":"b2232d1b0afcba58","toSide":"top"},
+		{"id":"bd61f8d39dcaf364","fromNode":"ea48fd9677efee2c","fromSide":"bottom","toNode":"47860a6ddefbc916","toSide":"top"},
+		{"id":"952fe55c0df80d5b","fromNode":"47860a6ddefbc916","fromSide":"right","toNode":"b2232d1b0afcba58","toSide":"left"},
+		{"id":"d52575819e652a86","fromNode":"b2232d1b0afcba58","fromSide":"bottom","toNode":"9bd6c2d7c9e75f36","toSide":"top"},
+		{"id":"a44b023e8beffb6f","fromNode":"47860a6ddefbc916","fromSide":"bottom","toNode":"8573cc8ce8eaa983","toSide":"top"},
+		{"id":"4e9113e32ac1702c","fromNode":"8573cc8ce8eaa983","fromSide":"right","toNode":"9bd6c2d7c9e75f36","toSide":"left"},
+		{"id":"4084575faba6a6c2","fromNode":"9bd6c2d7c9e75f36","fromSide":"right","toNode":"6a606db18b37d9be","toSide":"left"},
+		{"id":"6a3f4c20ed948ce9","fromNode":"6a606db18b37d9be","fromSide":"bottom","toNode":"5474663de5d13405","toSide":"right"},
+		{"id":"b980fa96dc00c270","fromNode":"8573cc8ce8eaa983","fromSide":"bottom","toNode":"5474663de5d13405","toSide":"left"},
+		{"id":"35461de2d48a599b","fromNode":"9bd6c2d7c9e75f36","fromSide":"bottom","toNode":"735992405bc0776f","toSide":"top"}
+	]
+}

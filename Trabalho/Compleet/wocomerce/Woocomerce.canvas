@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"1d4c9f0cc8aeb051","type":"text","text":"Adicionar a Loja Wordpress um Hook","x":-400,"y":-200,"width":250,"height":60},
+		{"id":"96ac05c58bcd112e","type":"file","file":"Trabalho/Compleet/wocomerce/Pasted image 20240703200031.png","x":-200,"y":-40,"width":400,"height":93},
+		{"id":"308d8e5fe307ac89","type":"text","text":"```php\nadd_action( 'woocommerce_payment_complete', 'rudr_complete' );\n\nfunction rudr_complete($name_client,$nuber_client) {\n\t\n\t$client = new \\GuzzleHttp\\Client();\n\t\n\t$response = $client->post(\"Template\"); \n\t\n\t$body = $response->getBody();\n\t\n}\n```\n\n[Link Doc Monichat](https://api-v2.monitchat.com/docs/?php#send-template)\n\nChamada quando o Pagamento e concluído _woocommerce_payment_complete_","x":-301,"y":180,"width":602,"height":460},
+		{"id":"a088d479672c456b","type":"text","text":"Chamada no [[Monichat Api]] ","x":400,"y":340,"width":280,"height":60},
+		{"id":"8f894d1ebe2f02ee","type":"text","text":"```php\nadd_action('woocommerce_payment_complete_order_status_$status', 'My_function_Compleet' );\n```\n\nChamado quando o pagamento foi concluído obedecendo um $_status_","x":620,"y":-53,"width":660,"height":193},
+		{"id":"f3176818548a383b","type":"text","text":"[Link dos eventos](https://rudrastyh.com/woocommerce/payment-complete-hooks.html)\n\n[Link de como criar uma ação](https://rudrastyh.com/woocommerce/payment-gateway-plugin.html)","x":275,"y":-65,"width":250,"height":143},
+		{"id":"4d4a252bd9deb15b","type":"text","text":"Outra alternativa","x":-301,"y":800,"width":250,"height":60},
+		{"id":"2799ffea3333d9e7","type":"text","text":"[trigger](https://n8n.io/integrations/woocommerce-trigger/)","x":18,"y":800,"width":250,"height":60},
+		{"id":"28e1f615c6bbebe5","type":"text","text":"[Hook](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/#webhook-urls)","x":18,"y":960,"width":250,"height":60},
+		{"id":"a66c8e6d5c676d0d","type":"file","file":"Trabalho/Compleet/wocomerce/Pasted image 20240703204856.png","x":-57,"y":1160,"width":399,"height":219},
+		{"id":"7c301bbd7316d452","type":"text","text":"HTTP Request [[Monichat Api]]","x":427,"y":1239,"width":273,"height":60},
+		{"id":"35fb4d447bee4c37","type":"text","text":"- Pago [Valor](https://n8n.io/pricing/)","x":-206,"y":1520,"width":250,"height":60,"color":"1"},
+		{"id":"1a6ef61b08535c92","type":"text","text":"- Mais facilidade na configuração \n- All integrations\n- Automatic retries","x":174,"y":1520,"width":339,"height":135,"color":"4"},
+		{"id":"fb80ba296d7c81c1","type":"file","file":"Trabalho/Compleet/wocomerce/Pasted image 20240703205111.png","x":18,"y":1244,"width":51,"height":50}
+	],
+	"edges":[
+		{"id":"d782eab2ead65de6","fromNode":"a088d479672c456b","fromSide":"left","toNode":"308d8e5fe307ac89","toSide":"right"},
+		{"id":"e5616ae72a321da7","fromNode":"1d4c9f0cc8aeb051","fromSide":"right","toNode":"96ac05c58bcd112e","toSide":"top"},
+		{"id":"6b173bded07a835a","fromNode":"96ac05c58bcd112e","fromSide":"bottom","toNode":"308d8e5fe307ac89","toSide":"top"},
+		{"id":"be9c9d01779f164a","fromNode":"96ac05c58bcd112e","fromSide":"right","toNode":"f3176818548a383b","toSide":"left"},
+		{"id":"b9228993e7ee3082","fromNode":"f3176818548a383b","fromSide":"right","toNode":"8f894d1ebe2f02ee","toSide":"left"},
+		{"id":"087239fc92419c33","fromNode":"4d4a252bd9deb15b","fromSide":"right","toNode":"2799ffea3333d9e7","toSide":"left"},
+		{"id":"1ec1613456101471","fromNode":"2799ffea3333d9e7","fromSide":"bottom","toNode":"28e1f615c6bbebe5","toSide":"top"},
+		{"id":"e26be03047efa15c","fromNode":"28e1f615c6bbebe5","fromSide":"bottom","toNode":"a66c8e6d5c676d0d","toSide":"top"},
+		{"id":"ff6a5435433bcebf","fromNode":"a66c8e6d5c676d0d","fromSide":"right","toNode":"7c301bbd7316d452","toSide":"left"},
+		{"id":"ea73016198189912","fromNode":"a66c8e6d5c676d0d","fromSide":"bottom","toNode":"35fb4d447bee4c37","toSide":"top"},
+		{"id":"a5ba83d4044338da","fromNode":"a66c8e6d5c676d0d","fromSide":"bottom","toNode":"1a6ef61b08535c92","toSide":"top"}
+	]
+}
